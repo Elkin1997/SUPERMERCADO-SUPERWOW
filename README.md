@@ -10,6 +10,21 @@ Sistema de supermercado inteligente que permite agregar productos a un carrito, 
 
 ---
 
+## 📸 Evidencia del funcionamiento
+
+### Interfaz del sistema
+![Interfaz](INTERFAZ.png)
+
+### Carrito de compras
+![Carrito](CARRITO.png)
+
+### Factura generada
+![Factura](FACTURA.png)
+
+### Base de datos en MySQL
+![BD](bd.png)
+
+
 ## 🧠 Descripción del Sistema
 
 El sistema permite:
