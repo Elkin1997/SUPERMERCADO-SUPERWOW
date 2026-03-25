@@ -57,30 +57,47 @@ El sistema utiliza MySQL con las siguientes tablas:
 
 ## 📘 Diccionario de Datos
 
-### 🧾 Clientes
-- id_cliente: identificador único
-- nombre: nombre del cliente
-- direccion: dirección del cliente
+### 🧾 Tabla: clientes
 
-### 🛒 Productos
-- id_producto: identificador único
-- nombre: nombre del producto
-- precio: precio del producto
-- imagen: ruta de la imagen
+| Campo       | Tipo           | Descripción              |
+|------------|---------------|--------------------------|
+| id_cliente | INT (PK)      | Identificador único      |
+| nombre     | VARCHAR(100)  | Nombre del cliente       |
+| direccion  | VARCHAR(150)  | Dirección del cliente    |
 
-### 🧾 Facturas
-- id_factura: identificador único
-- id_cliente: cliente asociado
-- fecha: fecha de compra
-- total: valor total
+---
 
-### 📦 Detalle Factura
-- id_detalle: identificador único
-- id_factura: factura asociada
-- id_producto: producto
-- cantidad: cantidad comprada
-- subtotal: total por producto
+### 🛒 Tabla: productos
 
+| Campo        | Tipo           | Descripción              |
+|-------------|---------------|--------------------------|
+| id_producto | INT (PK)      | Identificador único      |
+| nombre      | VARCHAR(100)  | Nombre del producto      |
+| precio      | DECIMAL(10,2) | Precio del producto      |
+| imagen      | VARCHAR(255)  | Ruta de la imagen        |
+
+---
+
+### 🧾 Tabla: facturas
+
+| Campo       | Tipo           | Descripción              |
+|------------|---------------|--------------------------|
+| id_factura | INT (PK)      | Identificador de factura |
+| id_cliente | INT (FK)      | Cliente asociado         |
+| fecha      | DATETIME      | Fecha de compra          |
+| total      | DECIMAL(10,2) | Total de la factura      |
+
+---
+
+### 📦 Tabla: detalle_factura
+
+| Campo        | Tipo           | Descripción              |
+|-------------|---------------|--------------------------|
+| id_detalle  | INT (PK)      | Identificador            |
+| id_factura  | INT (FK)      | Factura asociada         |
+| id_producto | INT (FK)      | Producto                 |
+| cantidad    | INT           | Cantidad comprada        |
+| subtotal    | DECIMAL(10,2) | Precio por cantidad      |
 ---
 
 ## ⚙️ Tecnologías usadas
