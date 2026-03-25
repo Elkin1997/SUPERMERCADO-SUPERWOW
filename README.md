@@ -21,14 +21,12 @@ Sistema de supermercado inteligente que permite agregar productos a un carrito, 
 ### Factura generada
 ![Factura](FACTURA.png)
 
-### Base de datos en MySQL
-![BD](bd.png)
-
-
-
-## 🗄️ Base de Datos en MySQL
-
+### 🗄️ Base de datos en MySQL
 ![Base de datos](SQL1.png)
+
+
+
+## 🗄️ Vista en MySQL
 
 ![Vista](SQL2.png)
 
