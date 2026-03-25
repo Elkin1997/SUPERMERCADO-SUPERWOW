@@ -25,6 +25,15 @@ Sistema de supermercado inteligente que permite agregar productos a un carrito, 
 ![BD](bd.png)
 
 
+
+## 🗄️ Base de Datos en MySQL
+
+![Base de datos](SQL1.png)
+
+![Vista](SQL2.png)
+
+
+
 ## 🧠 Descripción del Sistema
 
 El sistema permite:
